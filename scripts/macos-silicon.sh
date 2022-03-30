@@ -49,21 +49,6 @@ source ~/.zprofile
 APP="/Applications/Visual Studio Code.app"
 if [ -d "$APP" ]; then
     echo "VS Code found... skipping...."
-
-    APP="/Applications/Visual Studio Code.app"
-    if [ -d "$APP" ]; then
-        echo "$APP found... skipping...."
-    else
-        echo "$APP not found... installing..."
-        brew install --cask visual-studio-code
-    fi
-    
-    ENV_VAR='export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin":$PATH'
-    grep -qxF "$ENV_VAR" ~/.zprofile || echo "$ENV_VAR" >> ~/.zprofile 
-
-    echo '--- Installing Visual Studio Code Flutter Extension -----'
-    source ~/.zprofile
-    code --install-extension Dart-Code.flutter
 else
     echo "VS Code not found... installing..."
 
