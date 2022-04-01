@@ -163,3 +163,4 @@ else
     echo "flutter found.. skipping... "
 fi
 
+sudo arch -x86_64 gem install ffi
