@@ -91,7 +91,7 @@ else
     sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer
 fi
 
-sudo gem install cocoapods
+brew install cocoapods
 
 echo '--- Installing Java 8 -----'
 source ~/.zprofile    
