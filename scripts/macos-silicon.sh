@@ -92,6 +92,7 @@ else
 fi
 
 brew install cocoapods
+brew install fastlane
 
 echo '--- Installing Java 8 -----'
 source ~/.zprofile    
