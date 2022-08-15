@@ -91,13 +91,7 @@ else
     sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer
 fi
 
-which -s pod
-if [[ $? != 0 ]] ; then
-    echo "cocoapods not found... installing...."
-    sudo gem install cocoapods
-else
-    echo "cocoapods found.. skipping... "
-fi
+sudo gem install cocoapods
 
 echo '--- Installing Java 8 -----'
 source ~/.zprofile    
