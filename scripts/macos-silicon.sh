@@ -88,6 +88,7 @@ if [[ $? != 0 ]] ; then
     sudo xcodebuild -runFirstLaunch
 else
     echo "xcode found.. skipping... "
+    sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer
 fi
 
 which -s pod
